@@ -18,19 +18,19 @@ if __name__ == '__main__':
     turt=turtle.Turtle()
     # Have your turtle draw a circle with the correct radius
     # my_turtle.circle()
-    turt.circle()
+    turt.circle(radius)
     # Call the turtle .penup() method
     turt.penup()
     # Move your turtle to a new x,y position using .goto()
-    turt.goto(235, 345)
+    turt.goto(100, 0)
     # Calculate the area of your circle and store it in a variable, you can use math.pi
     pi=math.pi
     area=pi * radius * radius
     # Write the area of your circle using the turtle .write() method
     # myTurtle.write(arg="area = " + str(area), move=True, align='left', font=('Arial',8,'normal'))
-
+    turt.write(arg="area = " + str(area), move=True, align="left", font=("Arial", 8, "normal"))
     # Hide your turtle
-
+    turt.hideturtle()
     # Call turtle.done()
-
+    turtle.done()
     window.mainloop()
