@@ -23,8 +23,11 @@ Text Rendering Example:
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
 #Put your code here
-
-
+window=Tk()
+window.withdraw
+for i in range(3):
+    canvas.create_text(100, 50+15*i, text="icecream ", font=("Arial", 16))
+canvas.create_text(100, 150, text="banana", font=("Arial", 16))
 
 
 
